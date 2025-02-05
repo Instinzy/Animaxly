@@ -1,51 +1,59 @@
-body{
-	
+body {
     font-family: Tahoma;
     margin: 0;
     padding: 0;
-    body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-	}
+}
+
+/* Container - Centers Lessons */
 .container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
     text-align: center;
 }
 
+/* Lesson Section - Centers Content */
 .lesson {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     width: 100%;
     max-width: 700px;
-    margin: 20px 0;
+    margin: 20px auto;
 }
+
+/* Header Styling */
 header {
-	
     background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSuABTbs90g9fFQzu8eBFny5UIIcJ7KBCuplnRUSkk7n7fPJpGF6D0zvZw8&s=10&fbclid=IwY2xjawIEY8RleHRuA2FlbQIxMAABHQSB2Ja5EWP3pn1XiHrjzP_TUNYG8Rk47NEPIAmMNiXMte4MWhGOSqAI9A_aem_FnmoxuhxO7oZsYBBNOKRMA');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat; 
     padding: 15px;
     color: white;
-	  text-shadow: 2px 2px gray;
+    text-shadow: 2px 2px gray;
     text-align: center;
     position: relative;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
+
 header h1 {
     margin: 0;
 }
-{h1 
-  font-size: 2.5rem;
-  color: #2bafff;
-  font palette: dark;
-  text-shadow: 2px 2px #3319db;
- 
+
+/* Fixed h1 selector */
+h1 {
+    font-size: 2.5rem;
+    color: #2bafff;
+    text-shadow: 2px 2px #3319db;
 }
-.auth{
-	text-align: center;
+
+/* Authentication Section */
+.auth {
+    text-align: center;
     align-content: center;
     flex-direction: column;
     width: 100%;
@@ -56,6 +64,8 @@ header h1 {
     border-radius: 10px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
+
+/* Forms */
 input, textarea {
     padding: 12px;
     margin-bottom: 10px;
@@ -65,100 +75,103 @@ input, textarea {
 }
 
 form {
-	
-  display: space-between;
-  flex-direction: column;
-  gap: 1rem;
-  width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 300px;
 }
 
 form input {
-  padding: 0.8rem;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  font-size: 1rem;
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
 }
 
 form button {
-	font: Verdana;
-  padding: 0.8rem;
-  border: none;
-  border-radius: 5px;
-  background-color: #4a90e2;
-  color: white;
-  font-size: 1rem;
-  cursor: pointer;
-  transition: background 0.3s ease;
+    font-family: Verdana;
+    padding: 0.8rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #4a90e2;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
 }
 
 form button:hover {
-  background-color: #357ABD;
+    background-color: #357ABD;
 }
 
+/* Topics Section */
 #topics {
-  
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 1.5rem;
-  padding: 2rem;
-          justify-items: center;
-        align-items: center;
-        justify-content: center;
-        align-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    padding: 2rem;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    align-content: space-between;
 }
 
+/* Cards */
 .card {
-  background: white;
-  padding: 1.5rem;
-  border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  text-align: center;
+    background: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
 }
 
 .card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+    transform: translateY(-10px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
 }
 
 .card h2 {
-  margin: 0.5rem 0;
-  color: #333;
+    margin: 0.5rem 0;
+    color: #333;
 }
 
 .card .emoji {
-  font-size: 2rem;
+    font-size: 2rem;
 }
 
+/* Buttons */
 button {
-  background-color: #4a90e2;
-  color: white;
-  border: none;
-  padding: 0.8rem;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 1rem;
-  margin-top: 1rem;
-  transition: background 0.3s ease;
+    background-color: #4a90e2;
+    color: white;
+    border: none;
+    padding: 0.8rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: 1rem;
+    transition: background 0.3s ease;
 }
 
 button:hover {
-  background-color: #357ABD;
+    background-color: #357ABD;
 }
 
+/* Lesson Section */
 #lesson {
-  padding: 2rem;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+    padding: 2rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 #lesson h1 {
-  color: #4a90e2;
+    color: #4a90e2;
 }
 
 #lesson .emoji {
-  font-size: 4rem;
-  margin: 1rem 0;
+    font-size: 4rem;
+    margin: 1rem 0;
 }
