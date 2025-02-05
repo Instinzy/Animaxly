@@ -90,7 +90,14 @@
             <li><strong>Unsupervised Learning:</strong> Finding patterns in unlabeled data.</li>
             <li><strong>Reinforcement Learning:</strong> Learning through trial and error.</li>
           </ul>
-		 "Add Lesson":
+		  `,
+		"Animated Video Lesson": `
+          <p>Animated video Lesson is a entertainment and learning site that you </p>
+          <ul>
+            <li><strong>Supervised Learning:</strong> Training with labeled data.</li>
+            <li><strong>Unsupervised Learning:</strong> Finding patterns in unlabeled data.</li>
+            <li><strong>Reinforcement Learning:</strong> Learning through trial and error.</li>
+          </ul>
 		 
         `
       };
@@ -169,11 +176,30 @@
       <p>Discover the basics of AI and its applications.</p>
       <button onclick="showLesson('Artificial Intelligence', '', '🤖')">Start Lesson</button>
     </div>
+	<div class="card">
+      <div class="emoji">📹</div>
+      <h2>Start a Animated Video Lesson</h2>
+      <p>Now lets have learn and enjoy.</p>
+	  <body>
+    <div id="link-container"></div>
+
+    <script>
+        // Use template literals to create the link
+        const linkHTML = `<a href="video.html">Start Animated Lesson</a>`;
+        
+        // Insert the link into the container
+        document.getElementById('link-container').innerHTML = linkHTML;
+    </script>
+</body>
+    </div>
   </div>
+  </div>
+
 
   <div id="lesson" style="display: none;">
     <div id="lesson-content"></div>
     <button onclick="goBack()">Back to Topics</button>
   </div>
+  
 </body>
 </html>
